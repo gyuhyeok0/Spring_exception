@@ -1,0 +1,15 @@
+package com.ohgiraffers.exceptionhandler;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MainController {
+
+    @RequestMapping (value = {"/", "main"})
+    // local:8080 , local:8080/
+    public String main() {
+
+        return "main";
+    }
+}
